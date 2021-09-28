@@ -1,0 +1,308 @@
+/* change these */
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800");
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
+@import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");
+
+* {
+  box-sizing: border-box;
+}
+
+/* THIS IS ALL meant for editing. You might want to do it differently,
+name the variables differently,
+use the fonts in other ways in the font hierarchy etc. */
+
+/* change / delete some of these - note: all variables are listed twice */
+
+:root {
+  --primary-font: urbane, sans-serif;
+  --secondary-font: urbane, sans-serif;
+  --main-text-color: #1715a5;
+
+  --white-space: 1rem;
+
+  --bg-color: #1715a5;
+  --link-color: #ff6f5c;
+  --link-hover-color: #d5946c;
+  --color-4: #2b6073;
+  --color-5: #2b2b2b;
+}
+
+html {
+  font-size: 100%;
+  font-family: var(--primary-font);
+}
+
+body {
+  display: flex;
+}
+
+.column {
+  margin-top: 8vw;
+}
+
+main {
+  background-color: #dedef2;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  color: #1715a5;
+}
+
+header,
+main,
+w footer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: calc(2 * var(--white-space));
+  background-color: #dedef2;
+}
+
+.full-width {
+  background: #dedef2;
+  width: 100%;
+}
+
+.header-wrapper h1 {
+  font-size: 1.7rem;
+  letter-spacing: -2px;
+  font-weight: bold;
+  color: #1715a5;
+}
+
+.header-wrapper h2 {
+  font-size: 1.3em;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: bold;
+  margin: var(--white-space) 0;
+  color: #1715a5;
+}
+
+.header-wrapper h3 {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #1715a5;
+}
+
+.header-wrapper h4 {
+  font-size: 0.8rem;
+  color: #1715a5;
+}
+
+main {
+  padding: calc(2 * var(--white-space));
+}
+
+section {
+  /* margin-bottom: calc(4 * var(--white-space)); */
+  margin-bottom: calc(2 * var(--white-space));
+}
+
+.section-heading {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+  color: #1715a5;
+  font-weight: bold;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  color: #1715a5;
+}
+
+.swatches li {
+  margin-right: 5vw;
+  height: 15vw;
+  width: 15vw;
+  border-radius: 50%;
+}
+
+ul li:last-child {
+  margin-right: 0;
+}
+
+.color-swatch-1 {
+  background-color: var(--bg-color);
+}
+
+.color-swatch-2 {
+  background-color: var(--link-color);
+}
+
+.color-swatch-3 {
+  background-color: var(--link-hover-color);
+}
+
+.color-swatch-4 {
+  background-color: var(--color-4);
+}
+
+.color-swatch-5 {
+  background-color: var(--color-5);
+}
+
+.color-swatch-6 {
+  background-color: #fff;
+}
+
+.textures li {
+  height: 45vw;
+  width: 40%;
+  margin-right: 2vw;
+}
+
+.texture-swatch-1 {
+  background: url(../img/tile_pattern@2x.jpg);
+}
+
+.texture-swatch-2 {
+  background: url(../img/noodle_patern@2x.jpg);
+}
+
+.texture-swatch-3 {
+  background: url(../img/analog_texture@2x.jpg);
+}
+
+.images ul {
+  flex-direction: column;
+  text-align: center;
+}
+
+.images li {
+  display: block;
+  /*margin-right: 5vw;*/
+  margin-bottom: 1rem;
+}
+
+.btns {
+  display: flex;
+  justify-content: flex-start;
+  gap: calc(0.5 * var(--white-space));
+}
+
+button {
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  font: bold 1.25em/1 var(--primary-font);
+  letter-spacing: 1px;
+  background-color: #FF6F5C;
+  color: #ffff;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+  /* margin: 0 1rem 0 0; */
+}
+
+.secondary-button {
+  background-color: #ffff;
+  color: #ff6f5c;
+}
+
+button:focus,
+button:active,
+button:focus-within {
+  outline: 0;
+  border-radius: 4px;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+button:active {
+  background-color: var(--bg-color);
+}
+
+.typography-main {
+  color: var(--main-text-color);
+}
+
+.h1-sample {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.h2-sample {
+  font-family: var(--secondary-font);
+  font-size: 1.25rem;
+  color: #1715a5;
+}
+
+p.typography-sample {
+  font-family: var(--secondary-font);
+  line-height: 1.5;
+  max-width: 960px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+a {
+  font-family: var(--primary-font);
+  color: var(--link-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover {
+  font-size: 1.4em;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+p[class*="font-details-"] {
+  margin-top: 0.5rem;
+  /* margin-bottom: calc(2 * var(--white-space)); */
+  margin-bottom: var(--white-space);
+  font-size: 0.75rem;
+  font-family: var(--secondary-font);
+  color: #1715a5;
+}
+
+.adjectives ul {
+  font-size: 1.5rem;
+  opacity: 0.5;
+}
+
+.adjectives ul {
+  flex-direction: column
+}
+
+footer {
+  font-style: italic;
+}
+
+@media (min-width: 800px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+  }
+
+  .swatches li {
+    margin-right: 1.5%;
+    height: 7vw;
+    width: 7vw;
+  }
+
+  .textures li {
+    height: 15vw;
+  }
+}
+
+@media (min-width: 900px) {
+  .adjectives ul {
+    flex-direction: row;
+  }
+}
